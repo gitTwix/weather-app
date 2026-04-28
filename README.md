@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🌦️ Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, component-driven application designed to fetch and display real-time global weather data using the OpenWeatherMap API.
 
-## Available Scripts
+## 🚀 Overview
 
-In the project directory, you can run:
+The Weather App is a robust demonstration of modern front-end development principles. It provides a user-friendly interface for checking current weather conditions worldwide. This project showcases proficiency in component composition, asynchronous data handling, and state management using React Hooks.
 
-### `npm start`
+## ✨ Core Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*   **Real-time Data Retrieval:** Seamlessly searches and retrieves current weather conditions for any specified city globally.
+*   **Data Visualization:** Displays temperature accurately in Fahrenheit, rounded to two decimal places, alongside comprehensive metrics (humidity, wind speed, "feels like").
+*   **User Experience (UX):** Implements visual feedback for loading states and provides clear, user-friendly error messages for API failures or invalid inputs.
+*   **Responsiveness:** Built with a mobile-first approach, ensuring optimal viewing and functionality across all device types.
+*   **Security:** Utilizes environment variables (`.env`) to securely manage and protect the external API key.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏗️ Architecture & Design
 
-### `npm test`
+The application adheres to a clean, component-based architecture, ensuring high separation of concerns and maintainability.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*   **Component Composition:** Logic and UI are segmented into dedicated components (`SearchBar`, `WeatherDisplay`, `WeatherDetails`), promoting reusability and modularity.
+*   **State Management:** React Hooks (`useState`) are used to manage local component state and global data flow efficiently.
+*   **Data Flow:** API interaction and state updates are centralized within the root component (`App.js`), ensuring predictable and controlled data flow.
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category | Technology |
+| :--- | :--- |
+| **Frontend Framework** | React 18 |
+| **State Management** | React Hooks (`useState`) |
+| **API Handling** | Fetch API with `async/await` |
+| **External API** | OpenWeatherMap Current Weather API |
+| **Styling** | CSS3 |
+| **Deployment** | Vercel |
+| **Version Control** | Git & GitHub |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔮 Future Scope & Enhancements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To further enhance the application's functionality and complexity, future iterations could include:
 
-### `npm run eject`
+*   **Dynamic Theming:** Implementing conditional styling that updates the UI's color palette and background based on the current weather condition (e.g., dark mode for night, bright colors for sunny days).
+*   **Forecast Integration:** Integrating a 5-day/3-hour forecast API endpoint to provide predictive weather data.
+*   **Geolocation:** Adding functionality to automatically detect and display the user's current location without manual input.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+*   Node.js (v14 or higher)
+*   npm or yarn package manager
+*   OpenWeatherMap API key (Free tier is sufficient)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup Steps
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  **Clone the repository:**
+    ```bash
+    git clone [repository-url]
+    cd weather-app
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+3.  **Configure API Key:** Create a `.env` file in the root directory and populate it with your key:
+    ```
+    # .env
+    REACT_APP_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+    ```
+4.  **Run the application:**
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
