@@ -2,6 +2,12 @@
 
 A responsive, component-driven application designed to fetch and display real-time global weather data using the OpenWeatherMap API.
 
+## Live Demo
+
+🌐 **[View Live Demo](https://weather-app-theta-rose-55.vercel.app)**
+
+Try the Weather App now! Search for any city to see real-time weather data.
+
 ## 🚀 Overview
 
 The Weather App is a robust demonstration of modern front-end development principles. It provides a user-friendly interface for checking current weather conditions worldwide. This project showcases proficiency in component composition, asynchronous data handling, and state management using React Hooks.
